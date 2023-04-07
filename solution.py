@@ -16,4 +16,4 @@ def solution(p: float, x: np.array) -> tuple:
   left_q = gamma.ppf(alpha/2, a=N, scale=2/N)
   right_q = gamma.ppf(1-alpha/2, a=N, scale=2/N)
 
-return np.sqrt(sum_r2/44/N/right_q), np.sqrt(sum_r2/44/N/left_q)
+  return np.sqrt(sum_r2/44/N/right_q), np.sqrt(sum_r2/44/N/left_q)
